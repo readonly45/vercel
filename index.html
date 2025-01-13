@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom underline color */
+        .hover-underline-orange:hover {
+            text-decoration: underline;
+            text-decoration-color: #F97316; /* Tailwind's orange-500 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">SOUL<span class="text-orange-500">TRAVEL</span></a>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-gray-800 hover-underline-orange hover:text-orange-500">Destination</a></li>
+                <li><a href="#" class="text-gray-800 hover-underline-orange hover:text-orange-500">Package</a></li>
+                <li><a href="#" class="text-gray-800 hover-underline-orange hover:text-orange-500">Blog</a></li>
+                <li><a href="#" class="text-gray-800 hover-underline-orange hover:text-orange-500">About Us</a></li>
+                <li><a href="#" class="text-gray-800 hover-underline-orange hover:text-orange-500">Contact</a></li>
+            </ul>
+            <div>
+                <a href="#" class="text-gray-800 px-4 py-2 border border-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition-all">Sign Up</a>
+                <a href="#" class="ml-4 bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-white">
+        <div class="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center">
+            <!-- Text Content -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl font-bold text-gray-800">LET'S GO!<br><span class="text-orange-500">THE ADVENTURE</span> IS WAITING FOR YOU</h1>
+                <p class="text-gray-600 text-lg mt-4">Embark on Your Journey Today and Discover Uncharted Wonders Around the World – Your Adventure Awaits with Exciting Experiences, Unforgettable Memories, and Endless Opportunities.</p>
+                <div class="bg-gray-100 py-6 mt-8">
+    <div class="container px-6">
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-start"> <!-- Use items-start for left alignment -->
+            <div class="flex-1 mb-4 md:mb-0 md:mr-4">
+                <label for="destination" class="block text-gray-700 font-semibold">Destination</label>
+                <br>
+                <label for="destination" class="flex items-center text-gray-700 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                        <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+                    </svg> Paris, France
+                </label>                
+            </div>
+            <div class="flex-1 mb-4 md:mb-0 md:mr-4">
+                <label for="date" class="block text-gray-700 font-semibold">Date</label>
+                <br> <label for="destination" class="block text-gray-700 font-semibold">18 February 2024</label> 
+            </div>
+            <button class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-orange-600 transition">Search</button>
+        </div>
+    </div>
+</div>
+                
+            </div>
+            <!-- Image Content -->
+            
+                 <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center relative">
+    <div class="relative w-full h-auto">
+        <img src="images/girl.png" alt="Travel Hero" class="w-full h-auto rounded-full bg-orange-100">
+        
+        <div class="absolute top-20 left-0 m-4 bg-white shadow-md rounded-lg p-4 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z"/></svg>
+            <span class="text-orange-500 font-semibold">Hotel Booking</span>
+        </div>
+
+        <div class="absolute top-10 right-0 m-4 bg-white shadow-md rounded-lg p-4 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m397-115-99-184-184-99 71-70 145 25 102-102-317-135 84-86 385 68 124-124q23-23 57-23t57 23q23 23 23 56.5T822-709L697-584l68 384-85 85-136-317-102 102 26 144-71 71Z"/></svg>
+            <span class="text-orange-500 font-semibold">Flight Tickets</span>
+        </div>
+        <div class="absolute bottom-0 left-0 m-4 bg-white shadow-md rounded-lg p-4 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"/></svg>
+            <span class="text-orange-500 font-semibold">Local Events</span>
+        </div>
+
+        <div class="absolute bottom-10 right-5 m-4 bg-white shadow-md rounded-lg p-4 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M200-80v-800h80v80h560l-80 200 80 200H280v320h-80Zm80-640v240-240Zm220 200q33 0 56.5-23.5T580-600q0-33-23.5-56.5T500-680q-33 0-56.5 23.5T420-600q0 33 23.5 56.5T500-520Zm-220 40h442l-48-120 48-120H280v240Z"/></svg>
+            <span class="text-orange-500 font-semibold">Tour Guide</span>
+        </div>
+    </div>
+</div>
+        
+    </header>
+</body>
+</html>
